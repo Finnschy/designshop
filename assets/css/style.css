@@ -24,12 +24,14 @@ font-family: 'Karla', sans-serif;
 #logo {
     font-size: 1.2rem;
     font-weight: 700;
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 
 nav {
     /* border: 5px solid red; */
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,9 +71,25 @@ nav a:hover {
 }
 
 figure img {
-    transition: all ease-out .2s;
+    transition: all ease-out .3s;
+    -webkit-transition: all ease-out .3s;
+    -moz-transition: all ease-out .3s;
+    -ms-transition: all ease-out .3s;
+    -o-transition: all ease-out .3s;
 }
 
 figure img:hover {
     opacity: .4;
+}
+
+.figImg {
+    width: 100%;
+}
+
+.productGallery {
+    display: grid;
+    grid-template-columns: repeat(3, 26%);
+    gap: 3%;
+    justify-content: center;
+    margin: 3% 0 5% 0;
 }
