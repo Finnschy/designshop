@@ -55,9 +55,15 @@ nav a:hover {
 }
 
 .header {
-    /* border: 5px solid green; */
+    border: 5px solid green;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
+}
+
+img {
+    width: 100%;
 }
 
 .figcap {
@@ -68,6 +74,10 @@ nav a:hover {
 
 .brand {
     color: var(--main-txt-color);
+}
+
+figure {
+    width: 100%;
 }
 
 figure img {
@@ -88,26 +98,36 @@ figure img:hover {
 
 .productGallery {
     display: grid;
-    grid-template-columns: repeat(3, 26%);
+    grid-template-columns: repeat(3, 1fr);
     gap: 3%;
     justify-content: center;
-    margin: 3% 0 5% 0;
+    margin: 5%;
 }
 
 footer {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr 2fr;
-    gap: 3%;
-    /* align-items: baseline; */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1%;
     width: 84%;
     margin: 0 auto;
     padding-bottom: 1%;
-    background-color: rgb(255, 197, 197);
     line-height: 1.5rem;    
 }
 
-.copyright , .contact , .newsletter , .socialmedia , .sender{
-    padding: 5% 0 5% 10%;
+h3:nth-of-type(3) , h3:nth-of-type(4) {
+    padding-left: 20%;
+}
+
+ h3:nth-of-type(2) , .contact {
+     padding-left: 38%;
+ }
+
+ .contact , .copyright , .sender{
+    padding-top: 10%;
+} 
+
+.newsletter , .socialmedia {
+    padding: 10% 20%;
 }
 
 .contact , .socialmedia{
@@ -119,10 +139,6 @@ footer {
     font-style: italic;
 }
 
-h3 {    
-    background-color: #999;
-    padding: 10% 5% 5% 10%;
-}
 
 .sender , .sender a{
     color: var(--main-txt-color);
@@ -133,3 +149,5 @@ span , .contact , .socialmedia , .newsletter a {
 }
 
 
+
+/* @media  */
