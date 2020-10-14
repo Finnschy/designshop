@@ -94,3 +94,42 @@ figure img:hover {
     margin: 3% 0 5% 0;
 }
 
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 2fr;
+    gap: 3%;
+    /* align-items: baseline; */
+    width: 84%;
+    margin: 0 auto;
+    padding-bottom: 1%;
+    background-color: rgb(255, 197, 197);
+    line-height: 1.5rem;    
+}
+
+.copyright , .contact , .newsletter , .socialmedia , .sender{
+    padding: 5% 0 5% 10%;
+}
+
+.contact , .socialmedia{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter p:nth-child(2) {
+    font-style: italic;
+}
+
+h3 {    
+    background-color: #999;
+    padding: 10% 5% 5% 10%;
+}
+
+.sender , .sender a{
+    color: var(--main-txt-color);
+}
+
+span , .contact , .socialmedia , .newsletter a {
+    font-weight: 700;
+}
+
+
