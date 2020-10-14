@@ -21,39 +21,57 @@ font-family: 'Karla', sans-serif;
     font-family: 'Karla', sans-serif;
 }
 
+#logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 5%;
+}
+
+
 nav {
     /* border: 5px solid red; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 2% 0;
 }
 
 ul {
-    width: 30%;
     /* border: 5px solid blue; */
+    width: 30%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-#logo {
-    font-size: 1.2rem;
-    font-weight: 700;
-
+nav a:hover {
+    color: var(--main-txt-color);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 .header {
-    border: 5px solid green;
-    
+    /* border: 5px solid green; */
     display: flex;
     justify-content: center;
 }
 
-figcaption {
+.figcap {
     display: flex;
     justify-content: space-between;
+    padding: 1.5% 0 .5% 0;
 }
 
 .brand {
     color: var(--main-txt-color);
+}
+
+figure img {
+    transition: all ease-out .2s;
+}
+
+figure img:hover {
+    opacity: .4;
 }
