@@ -21,12 +21,11 @@ font-family: 'Karla', sans-serif;
     font-family: 'Karla', sans-serif;
 }
 
-#logo {
+.logo {
     font-size: 1.2rem;
     font-weight: 700;
 }
-
-
+/* 
 nav {
     width: 90%;
     margin: 0 auto;
@@ -40,6 +39,25 @@ ul {
     width: 30%;
     display: flex;
     justify-content: space-between;
+} */
+
+.navbar {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.main-nav {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-toggle {
+    display: none;
 }
 
 nav a:hover {
@@ -147,12 +165,51 @@ span , .contact , .socialmedia , .newsletter a {
     font-weight: 700;
 }
 
+@media only screen and (max-width: 768px) , only screen and (max-width: 1080px){
+    .main-nav {
+        width: 55%;
+    }
+}
 
+@media only screen and (max-width: 622px) {
 
-@media only screen and (max-width: 375px) {
-
-    ul {
+    /* ul {
         display: none;
+    } */
+
+    .logo {
+        margin-left: 5%;
+        display: inline-block;
+    }
+    .navbar {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .main-nav {
+        text-align: center;
+        display: inline-block;
+        display: none;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .main-nav li {
+        padding: 5% 0;
+    }
+
+    .navbar-toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 24px;
+    }
+
+    .active {
+        display: block;
     }
 
     .header {
@@ -211,3 +268,4 @@ span , .contact , .socialmedia , .newsletter a {
         order: 5;
     }
 }
+
