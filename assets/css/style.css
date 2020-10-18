@@ -24,12 +24,10 @@ font-family: 'Karla', sans-serif;
 #logo {
     font-size: 1.2rem;
     font-weight: 700;
-    margin-left: 3%;
 }
 
 
 nav {
-    /* border: 5px solid red; */
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -39,10 +37,9 @@ nav {
 }
 
 ul {
-    /* border: 5px solid blue; */
     width: 30%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 nav a:hover {
@@ -55,7 +52,6 @@ nav a:hover {
 }
 
 .header {
-    border: 5px solid green;
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -139,6 +135,9 @@ h3:nth-of-type(3) , h3:nth-of-type(4) {
     font-style: italic;
 }
 
+.sender {
+    grid-column: 1 / 3;
+}
 
 .sender , .sender a{
     color: var(--main-txt-color);
@@ -150,4 +149,65 @@ span , .contact , .socialmedia , .newsletter a {
 
 
 
-/* @media  */
+@media only screen and (max-width: 375px) {
+
+    ul {
+        display: none;
+    }
+
+    .header {
+        margin-top: 50%;
+        margin-bottom: 10%;
+    }
+
+    .header:first-of-type {
+        margin-top: 0;
+        margin-bottom: 10%;
+    }
+
+    .productGallery {
+        grid-template-columns: 1fr;
+        gap: 1%;
+        
+    }
+
+    footer {
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    footer h3 {
+        padding: 10% 0;
+    }
+
+    h3:nth-of-type(3) , h3:nth-of-type(2) , h3:nth-of-type(4) , .contact {
+        padding-left: 0%;
+    } 
+
+    .newsletter , .socialmedia , .contact , .copyright {
+        padding: 0% 0%;
+    }
+
+    footer h3:first-of-type , footer p:first-of-type {
+        order: 1;
+    }
+
+    footer h3:nth-of-type(2) , footer .contact {
+        order: 2;
+    }
+
+    footer h3:nth-of-type(3) , footer .newsletter {
+        order: 3;
+    }
+
+    footer h3:last-of-type , footer .socialmedia {
+        order: 4;
+    }
+
+    .sender {
+        padding-top: 10%;
+        order: 5;
+    }
+}
