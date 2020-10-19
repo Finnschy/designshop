@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/*
-headlines:  / 
-artikelnamen, footerlinks: 
-restlicher text: #000
-font-family: 'Karla', sans-serif;
-*/
-
 :root {
     --headline-color: #323A45;
     --main-txt-color: #848484;  
@@ -25,21 +18,6 @@ font-family: 'Karla', sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
 }
-/* 
-nav {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2% 0;
-}
-
-ul {
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
-} */
 
 .navbar {
     width: 90%;
